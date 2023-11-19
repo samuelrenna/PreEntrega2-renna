@@ -12,7 +12,7 @@ function Rectangulo(x, y, ancho, alto){
 }
 //introducir datos en html y al css
 Rectangulo.prototype.insertarDOM = function(){
-    let div = '<div id="'  + this.id +  '"></div>' ;
+    let div = '<div id='  + this.id +  '></div>' ;
     let html = document.getElementById("juego").innerHTML ;
     let color ='#' + Math.floor(Math.random() *16777215 ).toString(16); //obtener numeros de hexadecimal aleatorios para colores en css
     document.getElementById("juego").innerHTML = html + div ;
